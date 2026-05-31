@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architecture Diagram</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #0d1117;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        svg {
+            max-width: 90%;
+            max-height: 90%;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+            border-radius: 16px;
+            border: 1px solid #30363d;
+        }
+    </style>
+</head>
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" style="background-color: #0d1117; font-family: -apple-system, sans-serif;">
+        <!-- Definitions for markers -->
+        <defs>
+            <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                <polygon points="0 0, 10 3.5, 0 7" fill="#8b949e" />
+            </marker>
+            <marker id="arrowhead-reverse" markerWidth="10" markerHeight="7" refX="1" refY="3.5" orient="auto">
+                <polygon points="10 0, 0 3.5, 10 7" fill="#8b949e" />
+            </marker>
+            
+            <linearGradient id="clientGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#238636" />
+                <stop offset="100%" stop-color="#2ea043" />
+            </linearGradient>
+            
+            <linearGradient id="serverGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#1f6feb" />
+                <stop offset="100%" stop-color="#388bfd" />
+            </linearGradient>
+            
+            <linearGradient id="storageGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#8957e5" />
+                <stop offset="100%" stop-color="#a371f7" />
+            </linearGradient>
+        </defs>
+
+        <!-- Title -->
+        <text x="500" y="80" fill="#c9d1d9" font-size="32" font-weight="bold" text-anchor="middle">MCP System Architecture</text>
+
+        <!-- Client Node -->
+        <rect x="100" y="200" width="280" height="160" rx="12" fill="#161b22" stroke="url(#clientGrad)" stroke-width="3" />
+        <text x="240" y="240" fill="#3fb950" font-size="22" font-weight="bold" text-anchor="middle">run_agent.py</text>
+        <text x="240" y="265" fill="#8b949e" font-size="16" text-anchor="middle">(MCP Client)</text>
+        <text x="240" y="310" fill="#c9d1d9" font-size="18" font-weight="bold" text-anchor="middle">Gemini / Ollama LLM</text>
+        <text x="240" y="335" fill="#8b949e" font-size="14" text-anchor="middle">Action orchestration loop</text>
+
+        <!-- Server Node -->
+        <rect x="620" y="200" width="280" height="160" rx="12" fill="#161b22" stroke="url(#serverGrad)" stroke-width="3" />
+        <text x="760" y="240" fill="#58a6ff" font-size="22" font-weight="bold" text-anchor="middle">server.py</text>
+        <text x="760" y="265" fill="#8b949e" font-size="16" text-anchor="middle">(MCP Server)</text>
+        
+        <circle cx="660" cy="295" r="4" fill="#c9d1d9" />
+        <text x="675" y="300" fill="#c9d1d9" font-size="16">internet_research</text>
+        
+        <circle cx="660" cy="320" r="4" fill="#c9d1d9" />
+        <text x="675" y="325" fill="#c9d1d9" font-size="16">local_file_crud</text>
+        
+        <circle cx="660" cy="345" r="4" fill="#c9d1d9" />
+        <text x="675" y="350" fill="#c9d1d9" font-size="16">prefab_dashboard</text>
+
+        <!-- Storage Node -->
+        <rect x="620" y="440" width="280" height="100" rx="12" fill="#161b22" stroke="url(#storageGrad)" stroke-width="3" />
+        <text x="760" y="480" fill="#d2a8ff" font-size="20" font-weight="bold" text-anchor="middle">data/research_notes.json</text>
+        <text x="760" y="510" fill="#8b949e" font-size="16" text-anchor="middle">(Local Storage)</text>
+
+        <!-- Connection: Client <-> Server -->
+        <line x1="380" y1="280" x2="620" y2="280" stroke="#8b949e" stroke-width="3" marker-end="url(#arrowhead)" marker-start="url(#arrowhead-reverse)" />
+        <text x="500" y="265" fill="#c9d1d9" font-size="16" font-weight="bold" text-anchor="middle">stdio via MCP Protocol</text>
+        <text x="500" y="305" fill="#8b949e" font-size="14" text-anchor="middle">JSON-RPC Messages</text>
+
+        <!-- Connection: Server -> Storage -->
+        <line x1="760" y1="360" x2="760" y2="440" stroke="#8b949e" stroke-width="3" marker-end="url(#arrowhead)" />
+        <text x="775" y="405" fill="#c9d1d9" font-size="16" font-weight="bold">reads/writes</text>
+    </svg>
+</body>
+</html>

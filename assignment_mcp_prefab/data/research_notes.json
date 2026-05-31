@@ -1,0 +1,227 @@
+[
+  {
+    "id": "48a1970bfe",
+    "title": "Tata Sons Ownership Details",
+    "content": "About 66% of the equity share capital of Tata Sons is held by philanthropic trusts endowed by members of the Tata family. The remaining shares are held by various Tata family members and Tata companies.",
+    "source_url": "https://en.wikipedia.org/wiki/Tata_Sons",
+    "tags": [
+      "tata-sons",
+      "ownership"
+    ],
+    "metadata": {
+      "title": "Tata Sons Ownership Structure",
+      "headline_cards": [
+        {
+          "label": "Promoter Holding (Trusts)",
+          "value": "~66%"
+        }
+      ],
+      "ownership_rows": [
+        {
+          "shareholder": "Philanthropic Trusts",
+          "stake": "66.0%"
+        },
+        {
+          "shareholder": "Tata family members & Tata companies",
+          "stake": "34.0%"
+        }
+      ],
+      "tools_invoked": [
+        "internet_research",
+        "local_file_crud",
+        "prefab_research_dashboard"
+      ],
+      "agent_prompt": "Prompt 1: Tata Sons (original)"
+    },
+    "created_at": "2026-05-31T14:46:16+00:00",
+    "updated_at": "2026-05-31T14:46:16+00:00"
+  },
+  {
+    "id": "9e7580c79e",
+    "title": "Reliance Industries Shareholding Pattern (March 2024)",
+    "content": "As of March 2024, Promoters hold 50.37% of Reliance Industries, while the Public holds 49.63%. Within the public shareholding, Foreign Institutional Investors (FIIs) hold 22.06%, Domestic Institutional Investors (DIIs) hold 18.95%, and the general public (including small retail investors) holds the remaining 8.62%.",
+    "source_url": "https://trendlyne.com/shareholding/1195/RELIANCE/latest/reliance-industries-ltd/",
+    "tags": [
+      "reliance",
+      "shareholding",
+      "equity-markets",
+      "quarterly-filing"
+    ],
+    "metadata": {
+      "headline_cards": [
+        {
+          "label": "Promoter & Promoter Group",
+          "value": "50.37%"
+        },
+        {
+          "label": "Public",
+          "value": "49.63%"
+        }
+      ],
+      "ownership_rows": [
+        {
+          "label": "Promoter & Promoter Group",
+          "value": "50.37%"
+        },
+        {
+          "label": "Public",
+          "value": "49.63%"
+        }
+      ],
+      "non_promoter_rows": [
+        {
+          "label": "Foreign Institutions (FII)",
+          "value": "22.06%"
+        },
+        {
+          "label": "Domestic Institutions (DII)",
+          "value": "18.95%"
+        },
+        {
+          "label": "Public & Others",
+          "value": "8.62%"
+        }
+      ],
+      "large_holders": [],
+      "tools_invoked": [
+        "internet_research",
+        "local_file_crud",
+        "prefab_research_dashboard"
+      ],
+      "agent_prompt": "Prompt 2: Reliance Industries shareholding"
+    },
+    "created_at": "2026-05-31T14:47:09+00:00",
+    "updated_at": "2026-05-31T14:47:09+00:00"
+  },
+  {
+    "id": "c5cdc0dcb1",
+    "title": "Infosys Shareholding Pattern",
+    "content": "Data not available. The internet_research tool failed to retrieve the correct information after multiple attempts. The queries for 'Infosys shareholding pattern latest quarter' and 'Infosys shareholding pattern BSE latest' returned irrelevant results for other companies.",
+    "source_url": "",
+    "tags": [
+      "infosys",
+      "it-services",
+      "shareholding",
+      "data-not-found"
+    ],
+    "metadata": {
+      "headline_cards": [],
+      "ownership_rows": [],
+      "non_promoter_rows": [],
+      "large_holders": [],
+      "tools_invoked": [
+        "internet_research",
+        "local_file_crud",
+        "prefab_research_dashboard"
+      ],
+      "agent_prompt": "Prompt 3: Infosys shareholding"
+    },
+    "created_at": "2026-05-31T14:48:01+00:00",
+    "updated_at": "2026-05-31T14:48:01+00:00"
+  },
+  {
+    "id": "ed4756038a",
+    "title": "FAILED: Adani Enterprises Ltd Shareholding Pattern",
+    "content": "Failed to retrieve shareholding data for Adani Enterprises Ltd. The internet search tool returned irrelevant results.",
+    "source_url": "",
+    "tags": [
+      "\\\"adani\\",
+      "\\\"adani-enterprises\\",
+      "\\\"shareholding\\",
+      "\\\"failed-retrieval\\"
+    ],
+    "metadata": {
+      "headline_cards": [
+        {
+          "label": "Error",
+          "value": "Data not found"
+        }
+      ],
+      "ownership_rows": [],
+      "non_promoter_rows": [],
+      "large_holders": [],
+      "tools_invoked": [
+        "internet_research",
+        "local_file_crud",
+        "prefab_research_dashboard"
+      ],
+      "agent_prompt": "Prompt 4: Adani Enterprises shareholding"
+    },
+    "created_at": "2026-05-31T14:48:44+00:00",
+    "updated_at": "2026-05-31T14:48:44+00:00"
+  },
+  {
+    "id": "717ae89a3e",
+    "title": "Top 5 Economies by Nominal GDP",
+    "content": "This note contains the list of the top 5 world economies by nominal GDP, based on the latest figures from the IMF for 2024. The United States and China remain the top two, with significant leads over Germany, Japan, and India.",
+    "source_url": "https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal)",
+    "tags": [
+      "macroeconomics",
+      "gdp",
+      "imf",
+      "global-rankings"
+    ],
+    "metadata": {
+      "title": "Top 5 Economies by Nominal GDP",
+      "subtitle": "as of 2024, in USD trillions",
+      "as_of": "2024",
+      "ownership_table_title": "Top 5 Economies",
+      "headline_cards": [
+        {
+          "label": "United States",
+          "value": "$28.78T",
+          "detail": "26.3% of world GDP",
+          "note": "+2.7% growth"
+        },
+        {
+          "label": "China",
+          "value": "$18.53T",
+          "detail": "16.9% of world GDP",
+          "note": "+4.6% growth"
+        }
+      ],
+      "ownership_rows": [
+        {
+          "category": "United States",
+          "shares": "28.78",
+          "ownership": "26.3%",
+          "meaning": "Technology, Finance, Services"
+        },
+        {
+          "category": "China",
+          "shares": "18.53",
+          "ownership": "16.9%",
+          "meaning": "Manufacturing, Exports, Tech"
+        },
+        {
+          "category": "Germany",
+          "shares": "4.59",
+          "ownership": "4.2%",
+          "meaning": "Automotive, Industrial Manufacturing"
+        },
+        {
+          "category": "Japan",
+          "shares": "4.11",
+          "ownership": "3.8%",
+          "meaning": "Automotive, Electronics"
+        },
+        {
+          "category": "India",
+          "shares": "3.94",
+          "ownership": "3.6%",
+          "meaning": "IT Services, Manufacturing"
+        }
+      ],
+      "large_holders": [],
+      "non_promoter_rows": [],
+      "tools_invoked": [
+        "internet_research",
+        "local_file_crud",
+        "prefab_research_dashboard"
+      ],
+      "agent_prompt": "Prompt 5: Repurpose the schema for a non-ownership breakdown (stress test)"
+    },
+    "created_at": "2026-05-31T14:49:18+00:00",
+    "updated_at": "2026-05-31T14:49:18+00:00"
+  }
+]
